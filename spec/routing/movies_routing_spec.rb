@@ -13,6 +13,6 @@ RSpec.describe MoviesController, type: :routing do
 
   it "should route to movies#show" do
       route = "/categories/1/movies/1"
-      expect(get route).to route_to "movies#show", category_id: "1", id:"1"
+      expect(get route).to route_to( "movies#show", category_id: "1", id: "1")
   end
 end

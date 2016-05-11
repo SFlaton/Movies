@@ -7,7 +7,7 @@ RSpec.describe CategoriesController, type: :routing do
     end
 
     it "routes to categories#show" do
-      expect(:get => "/categories/1"). route_to("categories#show")
+      expect(:get => "/categories/1").to route_to(:controller => "categories", :action => "show", :id => "1")
     end
   end
 end
