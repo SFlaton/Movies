@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :categories do
     resources :movies
   end
+
+  get 'categories/category_id/movies/:id' => 'movies#show'
+
 end
